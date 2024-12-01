@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tanmay Modh} \\ \vspace{1pt}
+    \small +91-7550176936 $|$ \href{modhtanmay@gmail.com}{\underline{modhtanmay@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/tanmay-modh-/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/modhtanmay}{\underline{GitHub}}
+\end{center}
+
+%
+\begin{flushleft}
+Technical Support Analyst with experience in application deployment, debugging, and issue resolution. Proficient in Linux, Java, and cloud technologies, focused on scalable systems and efficient software solutions.
+\end{flushleft}
+
+%-----------Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Linux, SQL} \\
+     \textbf{Frameworks}{: Spring Boot} \\
+     \textbf{Cloud Platforms}{: AWS(EC2, S3, IAM)} \\
+     \textbf{DevOps Tools}{: Docker, Git, Jenkins} \\
+     \textbf{Database Managenemt}{: MySQL, Oracle Database} \\
+    \textbf{Networking}{: SSH, SCP} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{June 2021 -- Present}
+      {Temenos}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Supporting client issue of Temenos Triple A Plus modules, engaged in \textbf{troubleshooting, debugging, problem solving and root cause analysis}, while SLA targets \textbf{(SEV2 88\%, SEV3 87.5\%, SEV4\&5 80\%)}.   }
+        \resumeItem{Automating operational workflows using \textbf{Shell scripting} to manage and optimize the deployments and work processes in the staging and production environments }
+        \resumeItem{Analyzed defects, provided root cause reports, and collaborated with development teams to maintain valid client defect reopen goals within \textbf{7.92\%}, driving process improvement.}
+        \resumeItem{Extended \textbf{on-site support} during the \textbf{Go-Live} implementations and other important phases. Involved in sharing knowledge base with the team which includes knowledge contribution to support the team’s competency and productivity.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Onsite Production Engineer}{Jan. 2024 -- Jun. 2024}
+      {Eurobank Greece (Onsite through Temenos)}{Athens, Greece}
+      \resumeItemListStart
+        \resumeItem{ Provided Post-Live support, addressing critical challenges accross Temenos Wealth Management Modules}
+        \resumeItem{Handled live incidents, deployed hotfixes and made client specific development to enhance system stability and address client’s requirements.}
+        \resumeItem{Contributed configuration, solutions for P1 issues and tailored strategies to enhance operational efficiency and customer satisfaction.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Onsite Technical Consultant}{Sep 2022 -- Nov 2022}
+      {Eurobank Cyprus (Onsite through Temenos)}{Nicosia, Cyprus}
+      \resumeItemListStart
+        \resumeItem{Assisted in setting up new systems, applications, and software while ensuring SLAs through resolution of technical issues}
+        \resumeItem{Collaborated with stakeholders for swift resolution of complex problems, leading offshore teams with regular updates}
+      \resumeItemListEnd
+
+     \resumeSubheading
+      {Programmer Analyst}{Feb 2020 -- Jun 2021}
+      {Cognizant}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated with cross-functional teams to define design and ship new features.}
+        \resumeItem{Maintained clean and efficient code to meet project requirements.}
+        \resumeItem{Provided technical support and troubleshooting assistance to end-users when needed.}
+      \resumeItemListEnd  
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Order Monitoring Tool} $|$ \emph{Java, SpringBoot, Linux, Oracle database, Docker}}{Nov 2024 -- Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a web application using springboot that monitors the orders created in the server}
+            \resumeItem{Used SSH connection to connect Linux server}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{StockTrad-Z} $|$ \emph{Docker, Jenkins, Java, Maven, AWS, MySQL}}{Jun 2024 -- Sep 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a web based Stock Trading Platform}
+            \resumeItem{Hosted using AWS EC2 instance, deployed using Docker file and created CI/CD pipeline using Jenkins}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM University}{Chennai, India}
+      {Computer Science and Engineering, BTech}{Aug. 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+
+
+
+\end{document}
